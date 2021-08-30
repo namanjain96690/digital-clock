@@ -1,6 +1,6 @@
 
   .container{
-    height: 25vw;
+    height: 25vh;
     width: 90%;
     background-color: #060a1f;
     display:flex;
@@ -51,4 +51,42 @@
   }
   .container .clock div:last-child span{
     background: #ff006a;
+  }
+  @media only screen and (max-width: 768px){
+    .container h1{
+        position: relative;
+        display: block;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+   }
+   .container .clock div span{
+    position: relative;
+    display: block;
+    width:50px;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-size: 1.8em;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+  }
+  .container .clock div span:nth-child(2){
+    height:15px;
+    font-size: 0.4em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    background: #127fd6;
+    text-transform: uppercase;
+  }
+  .container .clock div:last-child span{
+    background: #ff006a;
+  }
   }
